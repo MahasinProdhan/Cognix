@@ -4,16 +4,17 @@
 @tailwind components;
 @tailwind utilities;
 
-@custom-variant dark (&:where(.dark, .dark *));
-
+/* Global font */
 * {
-  font-family: "outfit", sans-serif;
+  font-family: "Outfit", sans-serif;
 }
 
-@theme {
-  --color-primary: #e6ccff;
-}
-
+/* Hide scrollbar (Chrome, Edge, Safari) */
 ::-webkit-scrollbar {
   display: none;
+}
+
+/* Hide scrollbar (Firefox) */
+* {
+  scrollbar-width: none;
 }
